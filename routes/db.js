@@ -1,0 +1,1 @@
+var sqlite3 = require('sqlite3').verbose();//transactions DBconst sqldb= new sqlite3.Database('./DB/transactions.sqlite',function(err){    if(err){        console.log(err);    }else    {        console.log('Sqlite is Connected');    }});module.exports=sqldb;
